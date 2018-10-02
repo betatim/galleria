@@ -43,7 +43,7 @@ process.on("unhandledRejection", up => {
   await page.screenshot({ path: "screenshots/galleria.png" });
   
   // pretend the build takes a really long time
-  await sleep(120);
+  await sleep(121);
 
   await browser.close();
 })();
