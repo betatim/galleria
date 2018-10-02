@@ -41,6 +41,9 @@ process.on("unhandledRejection", up => {
   await page.hover(".commit-group");
 
   await page.screenshot({ path: "screenshots/galleria.png" });
+  
+  // pretend the build takes a really long time
+  await sleep(120);
 
   await browser.close();
 })();
